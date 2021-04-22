@@ -1,5 +1,5 @@
 # MathsAndNumbers
-programs related to Maths and numbers : competitive preparation
+programs related to Mathematics and numbers : competitive preparation
 
 -> Time complexity: 
 -> Space complexity: 
@@ -17,14 +17,18 @@ programs related to Maths and numbers : competitive preparation
 2. Given number is Palindrome OR not. (com.palindromeNumber)
 	-> Standard approach
 	
-## PENDING FROM HERE ##
-
-3. Factorial of a given number. ()
+3. Factorial of a given number. (com.factorial)
 	-> Iterative approach
 	-> Recursive approach
 	
-4. Find trailing 0s in factorial of a given number. (Mathematics fourth video - GFG)
-	-> Multiple solutions
+4. Find trailing 0s in factorial of a given number. (com.trailingZeros)
+
+   -> Naive approach
+   -> Efficient approach (more explained in readMe.txt)
+
+	 ex: n = 5 ==> o/p = 1
+		 n = 10 ==> o/p = 2	
+		 n = 100 ==> o/p = 24
 
 5. Find Fibonacci series up to given position. (com.fibonacci)
 
@@ -32,17 +36,19 @@ programs related to Maths and numbers : competitive preparation
    -> Linear storage approach
    -> Without linear storage approach
 
-6. GCD (Greatest common divisor : largest number which divides both OR all given numbers)/ HCF (Highest common factor) of given input.	
-(Mathematics fourth video - GFG : related to Tiles puzzle)
-	-> Naive approach
-	-> Euclidean algo : if 'b' < 'a'  => gcd(a, b) = gcd(a-b, b)
-	-> Optimized Euclidean algo
+6. GCD (Greatest common divisor) / HCF (Highest common factor): Largest number which divides both OR all given numbers	
+
+   -> Naive approach
+   -> Euclidean algo 
+   -> Optimized Euclidean algo (recursive version)
+
+   Tiles puzzle is based on GCD	
 	
 	ex: a = 4, b = 6 ==> o/p = 2
 		a = 100, b = 100 ==> o/p = 100	
 		a = 7, b = 13 ==> o/p = 1
 
-7. Find LCM (Least common multiple: a number which is lowest and can be divisible by all given numbers) of given input.
+7. Find LCM (Least common multiple) : Smallest number which is divisible by all given numbers
 	-> Naive approach
 	-> efficient solution : LCM(a, b) = (a * b) / GCD(a, b)
 	
@@ -50,6 +56,8 @@ programs related to Maths and numbers : competitive preparation
 		a = 12, b = 15 ==> o/p = 60	
 		a = 2, b = 8 ==> o/p = 8
 		a = 3, b = 7 ==> o/p = 21
+		
+## --> start from here
 
 8. Prime number.
    -> Naive approach

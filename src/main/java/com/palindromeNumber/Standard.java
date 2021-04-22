@@ -39,9 +39,20 @@ public class Standard {
 	private static boolean isPalindrome(int number) {
 		int newNumber = 0;
 		int tempNumber = number;
-		while(tempNumber > 0) {
+		
+		/**
+		 * while loop
+		 */
+		/*while(tempNumber > 0) {
 			newNumber = (newNumber*10)+(tempNumber%10);
 			tempNumber = tempNumber / 10;
+		}*/
+		
+		/**
+		 * for loop
+		 */
+		for(; tempNumber > 0; tempNumber = tempNumber / 10) {
+			newNumber = (newNumber*10)+(tempNumber%10);
 		}
 		return (number == newNumber);
 	}

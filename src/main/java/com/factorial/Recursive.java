@@ -30,13 +30,16 @@ public class Recursive {
 		number = 15;
 		System.out.println("("+number+")! = "+findFactorial(number));
 		
+		number = 13;
+		System.out.println("("+number+")! = "+findFactorial(number));
+		
 	}
 
 	/**
 	 * @param number
 	 * @return
 	 */
-	private static int findFactorial(int number) {
+	private static long findFactorial(int number) {
 		if(number <= 1) {
 			return 1;
 		}

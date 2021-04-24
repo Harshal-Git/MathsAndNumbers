@@ -22,15 +22,15 @@ public class Iterative {
 	public static void main(String[] args) {
 
 		int number = 4;
-		/*System.out.println("("+number+")! = "+findFactorial(number));
+		System.out.println("("+number+")! = "+findFactorial(number));
 		
 		number = 23;
 		System.out.println("("+number+")! = "+findFactorial(number));
 		
 		number = 15;
-		System.out.println("("+number+")! = "+findFactorial(number));*/
+		System.out.println("("+number+")! = "+findFactorial(number));
 		
-		number = 30;
+		number = 20;
 		System.out.println("("+number+")! = "+findFactorial(number));
 	}
 

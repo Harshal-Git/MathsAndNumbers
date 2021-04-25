@@ -13,8 +13,8 @@ package com.LCM;
  *					LCM(a, b) = (a * b) / GCD(a, b); 
  *
  *	-> Time complexity:  O(log (min(a,b))) 
- *	-> Space complexity: ??
- *	-> Auxiliary space:  ??
+ *	-> Space complexity: O(log (min(a,b)))
+ *	-> Auxiliary space:  O(log (min(a,b)))
  */
 public class EfficientApproach {
 

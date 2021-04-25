@@ -1,9 +1,5 @@
 # MathsAndNumbers
-programs related to Mathematics and numbers : competitive preparation
-
--> Time complexity: 
--> Space complexity: 
--> Auxiliary space: 
+programs related to Mathematics and numbers & bit operations : competitive preparation
 
 ##########
 
@@ -97,7 +93,7 @@ programs related to Mathematics and numbers : competitive preparation
 	ex: n = 10 => o/p = 2 3 5 7  
 	    n = 23 => o/p = 2 3 5 7 11 13 17 23
 
-12. Computing power - calculate power of a number based on given inputs
+12. Computing power - calculate power of a number based on given inputs (com.computePower)
 	
    -> Naive approach: 
    -> Efficient approach : recursive call
@@ -108,6 +104,51 @@ programs related to Mathematics and numbers : competitive preparation
 	    x = 5 & n = 0 => o/p : 1
 	    x = 5 & n = 1 => o/p : 5
 
+13. Bit operations in Java :  
+
+    -> AND / OR / XOR / NOT / left shift / right shift / unsigned right shift (com.bitwiseOperations)
+    
+    -> Check Kth bit is set OR not for given number; K >= 0 - position in binary representation of given number 		(com.bitwiseProblems) 
+
+	ex: n = 5, k = 1 ==> o/p : Yes
+		n = 8, k = 2 ==> o/p : No
+		n = 0, k = 3 ==> o/p : No
+
+   -> count number of set bits (com.countSetBits)
+   
+   	 1. Naive approach: keep dividing number by 2 and if we find any remainder, count such remainders. which will be expected count.
+   	 2. Brian Kerningam's algorithm
+   	 3. Look-up table method (could not understand much out of it)
+   
+	ex. n = 5 ==> o/p : 2  
+		n = 7 ==> o/p : 3
+		n = 13 ==> o/p : 3
+		
+   -> check whether given number is power of 2 OR not (com.powerOf2)
+    
+   1. Naive approach : repeatedly divide given number by 2 and if it has a remainder while dividing by 2, it's not power of 2
+   2. Using Brian algo : 
+   
+	ex. n = 4 ==> o/p : Yes  
+		n = 6 ==> o/p : No
+		
+  -> Find the odd times occurring number from given array (com.oddOccurringNumber)
+  	1. naive approach: 
+  	2. efficient approach 1 : XORing all numbers; at the end, ODD number only will remain.
+  	3. variation question : find missing number from given array
+  
+	ex. [4, 3, 4, 4, 4, 5, 5] ==> o/p : 3
+		[8, 7, 7, 8, 8] ==> o/p : 8
+
+  -> Find the 2 odd times occurring numbers from given array (com.oddOccurringNumberDual)
+   1. Naive approach 
+   2. Efficient approach
+   
+  -> Generate power set of given set using bitwise operators (com.generatePower)
+
+	ex. s = "abc" ==> o/p = "", a, b, c, ab, ac, bc, abc 
+		s = "ab" ==> o/p = "", a, b, ab
+		
 ##########
 
 Note down theories of efficient solutions of some important problems (primes / factors ...etc)

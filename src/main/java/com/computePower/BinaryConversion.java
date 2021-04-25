@@ -13,7 +13,12 @@ package com.computePower;
  * 							 10 =  1  |  0  |  1  |  0 	
  * 
  * -> as loop starts dividing from higher to lower number, we get conversion in reverse. So at the end, result needs 
- * 	to be reversed. 
+ * 	to be reversed.
+ * 
+ * 	-> Time complexity: 0(log n) 
+ * 	-> Space complexity: 0(1)
+ * 	-> Auxiliary space: 0(1)
+ *   
  */
 public class BinaryConversion {
 

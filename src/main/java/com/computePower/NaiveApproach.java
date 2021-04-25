@@ -10,7 +10,7 @@ package com.computePower;
  *	
  *	-> naive approach : simple calculation
  *
- *	-> Time complexity: 0(n - power)
+ *	-> Time complexity: 0(power number)
  *	-> Space complexity: 0(1)
  *	-> Auxiliary space: 0(1)
  */

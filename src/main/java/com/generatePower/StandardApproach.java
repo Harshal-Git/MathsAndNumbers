@@ -30,9 +30,9 @@ public class StandardApproach {
 		System.out.print("Power subset of "+data+" => ");
 		printPowerSubset(data);
 
-		/*data = "ab";
+		data = "ab";
 		System.out.print("\nPower subset of "+data+" => ");
-		printPowerSubset(data);*/
+		printPowerSubset(data);
 	}
 
 	/**

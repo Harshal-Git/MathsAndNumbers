@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.computePower;
+package com.convertToBinary;
 
 /**
  * @author Harshal-Git

@@ -17,7 +17,7 @@ programs related to Mathematics and numbers & bit operations : competitive prepa
 	-> Iterative approach
 	-> Recursive approach
 	
-4. Find trailing 0s in factorial of a given number. (com.trailingZeros)
+4. Find trailing 0s in factorial of a given number. (com.trailingZerosOfAFactorial)
 
    -> Naive approach
    -> Efficient approach (more explained in readMe.txt)
@@ -85,7 +85,7 @@ programs related to Mathematics and numbers & bit operations : competitive prepa
 	    n = 100 ==> o/p : 1 2 4 5 10 20 25 50 100
 	    n = 7 ==> o/p : 1 7
 		
-11. Sieve of Eratosthenes : find all prime numbers lesser or equal to the given number (com.eratosthenesProblem)
+11. Sieve of Eratosthenes : find all prime numbers lesser or equal to the given number (com.findSmallerPrimeNumbers)
 
    -> Naive approach
    -> Efficient approach (could not understand usability of the algo - not completed)
@@ -144,7 +144,7 @@ programs related to Mathematics and numbers & bit operations : competitive prepa
    1. Naive approach 
    2. Efficient approach
    
-  -> Generate power set of given set using bitwise operators (com.generatePower)
+  -> Generate power set of given set using bitwise operators (com.generatePowerSubsets)
 
 	ex. s = "abc" ==> o/p = "", a, b, c, ab, ac, bc, abc 
 		s = "ab" ==> o/p = "", a, b, ab

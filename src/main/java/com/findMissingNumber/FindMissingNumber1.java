@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.oddOccurringNumber;
+package com.findMissingNumber;
 
 import java.util.Arrays;
 

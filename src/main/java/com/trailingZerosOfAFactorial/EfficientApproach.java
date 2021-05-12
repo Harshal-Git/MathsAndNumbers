@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.trailingZeros;
+package com.trailingZerosOfAFactorial;
 
 /**
  * @author Harshal-Git

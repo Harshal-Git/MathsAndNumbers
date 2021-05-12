@@ -47,7 +47,7 @@ public class NaiveApproach {
 		int min = (a < b) ? a : b;
 		
 		for(int index = min; index >= 1; index--) {
-			if(a % index == 0 && b % index == 0) {
+			if((a % index == 0) && (b % index == 0)) {
 				return index;
 			}
 		}

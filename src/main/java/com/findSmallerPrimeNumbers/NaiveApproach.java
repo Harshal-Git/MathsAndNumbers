@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.eratosthenesProblem;
+package com.findSmallerPrimeNumbers;
 
 /**
  * @author Harshal-Git

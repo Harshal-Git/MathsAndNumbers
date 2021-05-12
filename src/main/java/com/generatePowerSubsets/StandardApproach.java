@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.generatePower;
+package com.generatePowerSubsets;
 
 /**
  * @author Harshal-Git
@@ -24,7 +24,6 @@ public class StandardApproach {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-
 		
 		String data = "abc";
 		System.out.print("Power subset of "+data+" => ");
@@ -55,7 +54,7 @@ public class StandardApproach {
 			for(int j = 0; j < index; j++) {
 				
 				if((index & (1 << j)) != 0) {
-					System.out.print(data.charAt(j));
+					System.out.print("("+j+")"+data.charAt(j));
 				}
 			}
 			System.out.print(" ");

@@ -8,7 +8,7 @@ package com.countSetBits;
  *
  *	-> count number of set bits in a given number
  *
- * 	-> approach 3: Brian Kerningam's algorithm
+ * 	-> approach 3: Brian Kernighan's algorithm
  * 
  *  -> this algo works on the principle of keep subtracting 1 from given number & performing AND operation with the previous 
  *  	number till the time result becomes 0. Count of such AND operations will give the set bits.
@@ -21,7 +21,7 @@ package com.countSetBits;
  * 	-> Space complexity: 0(1)	
  * 	-> Auxiliary space: 0(1)
  */
-public class BrianKerningamAlgo {
+public class BrianKernighanAlgo {
 
 	/**
 	 * @param args

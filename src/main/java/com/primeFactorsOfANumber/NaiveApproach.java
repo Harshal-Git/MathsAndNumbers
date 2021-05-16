@@ -1,13 +1,14 @@
 /**
  * 
  */
-package com.primeFactors;
+package com.primeFactorsOfANumber;
 
 /**
  * @author Harshal-Git
  *
  *	-> find prime factors of a given number : 
  *			prime factors = factors of a given number which are only prime
+ *			multiplication of such prime factors will give the number itself.
  *
  *	-> naive approach
  *
@@ -30,11 +31,11 @@ public class NaiveApproach {
 		num = 315;
 		System.out.print("\nPrime factors of "+num+" = ");
 		printPrimeFactors(num);
-		
+
 		num = 13;
 		System.out.print("\nPrime factors of "+num+" = ");
 		printPrimeFactors(num);
-		
+
 		num = 26;
 		System.out.print("\nPrime factors of "+num+" = ");
 		printPrimeFactors(num);

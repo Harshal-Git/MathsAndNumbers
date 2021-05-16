@@ -64,7 +64,7 @@ programs related to Mathematics and numbers & bit operations : competitive prepa
 		
 	first few prime numbers: 2, 3, 5, 7, 11, 13, 17, 19...
 	
-9. Prime factors of given number. Divisors of a number which are prime. (com.primeFactors)
+9. Prime factors of given number. Divisors of a number which are prime. (com.primeFactorsOfANumber)
 
    -> Naive approach: 
    -> Efficient solution: 
@@ -73,7 +73,7 @@ programs related to Mathematics and numbers & bit operations : competitive prepa
 		n = 13 ==> 13 
 		n = 315 ==> 3, 3, 5, 7
 	
-10. Print all divisors of a number. (com.divisorsOfANumber)
+10. Print all divisors of a number. (com.factorsOfANumber)
 
     -> Naive approach : starting from 1 -> n, if any number completely divides given number, it's a divisor
     -> Efficient approach 1 : as divisors exist in pairs, we can run the loop till Sqrt(n) and find first half

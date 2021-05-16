@@ -1,12 +1,12 @@
 /**
  * 
  */
-package com.divisorsOfANumber;
+package com.factorsOfANumber;
 
 /**
  * @author Harshal-Git
  *
- *	-> print divisors of given number
+ *	-> print divisors or factors of a given number
  *
  *	-> efficient approach 1: run the loop till Sqrt(n) and find all lowest divisors of divisor pairs.
  *							then using the first divisor, find second divisor

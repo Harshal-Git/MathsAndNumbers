@@ -1,12 +1,12 @@
 /**
  * 
  */
-package com.divisorsOfANumber;
+package com.factorsOfANumber;
 
 /**
  * @author Harshal-Git
  *
- *	-> print divisors of a given number
+ *	-> print divisors or factors of a given number
  *	
  *	-> naive approach : starting from 1 till n; if that number completely divides given number, it's a divisor.
  *
@@ -30,6 +30,10 @@ public class NaiveApproach {
 		printDivisors(num);
 		
 		num = 7;
+		System.out.print("\nDivisors of number "+num+" = ");
+		printDivisors(num);
+		
+		num = 12;
 		System.out.print("\nDivisors of number "+num+" = ");
 		printDivisors(num);
 	}

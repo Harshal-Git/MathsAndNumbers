@@ -1,17 +1,19 @@
 /**
  * 
  */
-package com.primeFactors;
+package com.primeFactorsOfANumber;
 
 /**
  * @author Harshal-Git
  *
  *	-> find prime factors of a given number : 
  *			prime factors = factors of a given number which are only prime
+ * 			multiplication of such prime factors will give the number itself.
  *
  *	-> efficient approach 1 : to go till Sqrt(n) instead of full 'n' length
  *
- *	-> Time complexity: O(Sqrt(n) * log n) : Sqrt(n) for outer loop, (log n) for internal while loop  
+ *	-> Time complexity: O(Sqrt(n) * log n) : Sqrt(n) for outer loop, (log n) for internal while loop; which gets 
+												divided by 'i' each time.
  *	-> Space complexity: 0(1)
  *	-> Auxiliary space: 0(1)
  */

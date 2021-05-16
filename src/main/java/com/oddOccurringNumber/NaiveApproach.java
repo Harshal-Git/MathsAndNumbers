@@ -31,6 +31,8 @@ public class NaiveApproach {
 		int [] data2 = {8, 7, 7, 8, 8};
 		System.out.println("Odd count element in array "+Arrays.toString(data2)+" => "+getOddCountElement(data2));
 
+		int [] data3 = {8, 7, 7, 8, 8, 8};
+		System.out.println("Odd count element in array "+Arrays.toString(data3)+" => "+getOddCountElement(data3));
 	}
 
 	/**

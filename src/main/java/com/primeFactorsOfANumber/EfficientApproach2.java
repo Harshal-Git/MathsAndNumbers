@@ -1,15 +1,16 @@
 /**
  * 
  */
-package com.primeFactors;
+package com.primeFactorsOfANumber;
 
 /**
  * @author Harshal-Git
  *
  *	-> find prime factors of a given number : 
  *			prime factors = factors of a given number which are only prime
+ * 			multiplication of such prime factors will give the number itself.
  *
- *	-> efficient approach 1 : to go till Sqrt(n) instead of full 'n' length
+ *	-> efficient approach 2 : using extended version of method to check prime number.
  *
  *	-> Time complexity: O(Sqrt(n))   
  *	-> Space complexity: 0(1)
@@ -39,10 +40,15 @@ public class EfficientApproach2 {
 	 * @param num
 	 */
 	private static void printPrimeFactors(int num) {
+		// Stage#1
 		if(num == 1) {
 			// do nothing
 		}
-		// separately take care of numbers such as '2' & '3' to save main loop iterations
+		/*
+		 * Stage#2
+		 * separately take care of numbers such as '2' & '3' to 
+		 * save main loop iterations and find factors with 2 & 3
+		 */
 		while(num % 2 == 0) {
 			System.out.print(2+" ");
 			num = num / 2;
@@ -51,7 +57,11 @@ public class EfficientApproach2 {
 			System.out.print(3+" ");
 			num = num / 3;
 		}
-		// as 2 & 3 divisors are already considered, take remaining numbers 
+
+		/*
+		 * Stage#3
+		 * as 2 & 3 divisors are already processed, take remaining numbers
+		 */
 		for(int i = 5; (i*i) < num; i= i + 6) {
 			while((num % i) == 0) {
 				System.out.print(i+" ");
@@ -62,6 +72,7 @@ public class EfficientApproach2 {
 				num = num / (i+2);
 			}
 		}
+		// if any remainder is still present after Stage#4; print those directly 
 		if(num >= 5) {
 			System.out.print(num+" ");
 		}

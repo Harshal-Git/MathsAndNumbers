@@ -14,7 +14,7 @@ package com.fibonacci;
  * position: 3 = 2
  * position: 8 = 21
  * 
- * -> Time complexity:	0(n)
+ * -> Time complexity:	0(2^n) [T(n) = T(n-1)+T(n-2) + C] {this recursive equation can be solved by considering T(n-1) ~ T(n-2)}
  * -> Space complexity:	0(n)
  * -> Auxiliary space: 	0(n)
  * 

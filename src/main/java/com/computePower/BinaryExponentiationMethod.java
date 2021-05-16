@@ -22,14 +22,15 @@ package com.computePower;
  *	-> Space complexity: 0(1)
  *	-> Auxiliary space: 0(1)
  */
-public class IterativePowerApproach {
+public class BinaryExponentiationMethod {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
 
-		int x = 2, y = 3;
+		long x = 2;
+		int y = 3;
 		System.out.println("Pow("+x+", "+y+") = "+pow(x, y));
 
 		x = 3; y = 4;
@@ -40,8 +41,8 @@ public class IterativePowerApproach {
 
 		x = 5; y = 1;
 		System.out.println("Pow("+x+", "+y+") = "+pow(x, y));
-		
-		x = 5; y = 10;
+
+		x = 5; y = 6;
 		System.out.println("Pow("+x+", "+y+") = "+pow(x, y));
 	}
 
@@ -50,10 +51,10 @@ public class IterativePowerApproach {
 	 * @param y
 	 * @return
 	 */
-	private static long pow(int x, int y) {
+	private static long pow(long x, int y) {
 		long result = 1;
 		while(y > 0) {
-			if(y % 2 != 0) {
+			if(y % 2 != 0) {	// to read the set bit
 				result = result * x;
 			}
 			x = x * x;

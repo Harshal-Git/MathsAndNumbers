@@ -8,14 +8,12 @@ package com.countSetBits;
  *
  *	-> count number of set bits in a given number
  *
- * 	-> approach 3: Brian Kernighan's algorithm
+ * 	-> approach 3: Brian Kernighan's algorithm : Subtracting 1 from a given number and performing AND operation with actual number 
+ * 					will unset the right most bit in binary representation of the number.    
  * 
- *  -> this algo works on the principle of keep subtracting 1 from given number & performing AND operation with the previous 
- *  	number till the time result becomes 0. Count of such AND operations will give the set bits.
- *  
- *  -> how this works? for any number, if 1 is subtracted from that number, then all the 0 digits after the last (OR right most) 
- *  					set bit becomes 1. So AND operation with the number AND (number-1) will remove all the set bits from 
- *  					right side. And doing such operations repeatedly, complete number can be turned to 0.
+ *  -> For any number 'n', if we keep performing AND operation with (n-1), the operation will keep removing the right most set bit 
+ *  	from number 'n' and will provide a new number 'p' (p < n). We can repeat the process till 'p' becomes 0 and count such AND 
+ *  	operations; which will be same as the number of set bits in 'n'.  
  * 
  * 	-> Time complexity: 0(total set bits of n)
  * 	-> Space complexity: 0(1)	

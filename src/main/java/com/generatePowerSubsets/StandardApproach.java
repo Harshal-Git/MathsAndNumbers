@@ -17,6 +17,8 @@ package com.generatePowerSubsets;
  * 	-> Time complexity: 0(2^n * n) 
  * 	-> Space complexity: 0(1)
  * 	-> Auxiliary space: 0(1)
+ * 
+ * 	-> First go through : FindIndexOfSetBits.java
  */
 public class StandardApproach {
 
@@ -46,15 +48,17 @@ public class StandardApproach {
 		// find size of possible subsets
 		int possibleOffsets = (int) Math.pow(2, length);
 
-		// now loop from 1 -> offsets
+		/*
+		 * Find all the bits which are set for given number. 
+		 * With the help of such indexes, we can find subsets of given string.
+		 */
 		for(int index = 0; index < possibleOffsets; index++) {
 			
-			// start internal loop which will prepare offset based on binary 
-			// representation of index : starting from 0 
 			for(int j = 0; j < index; j++) {
 				
 				if((index & (1 << j)) != 0) {
-					System.out.print("("+j+")"+data.charAt(j));
+					//System.out.print("("+j+")"+data.charAt(j));
+					System.out.print(data.charAt(j));
 				}
 			}
 			System.out.print(" ");

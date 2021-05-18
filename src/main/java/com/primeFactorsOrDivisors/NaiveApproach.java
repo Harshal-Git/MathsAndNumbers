@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.primeFactorsOfANumber;
+package com.primeFactorsOrDivisors;
 
 /**
  * @author Harshal-Git

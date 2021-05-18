@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.factorsOfANumber;
+package com.factorsOrDivisorsOfANumber;
 
 /**
  * @author Harshal-Git

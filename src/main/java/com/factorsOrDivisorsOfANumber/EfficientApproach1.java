@@ -39,6 +39,10 @@ public class EfficientApproach1 {
 		num = 5;
 		System.out.print("\nDivisors of number "+num+" = ");
 		printDivisors(num);
+		
+		num = 28;
+		System.out.print("\nDivisors of number "+num+" = ");
+		printDivisors(num);
 	}
 
 	/**

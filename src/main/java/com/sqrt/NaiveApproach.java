@@ -11,6 +11,8 @@ package com.sqrt;
  *	-> naive approach : starting from 1; go till given number 'n' such that for a number 'p' it becomes (p*p > n)
  *						return the (p-1).
  *
+ *	-> efficient solution is given in part of binary search module.
+ *
  * -> Time complexity: 0(Sqrt n)	
  * -> Space complexity: 0(1)	
  * -> Auxiliary space: 0(1)

@@ -6,7 +6,7 @@ package com.generatePowerSubsets;
 /**
  * @author Harshal-Git
  *
- *	-> For any given number 'k'; find index of set bit/s in it's binary representation.
+ *	-> For any given number 'k'; find index/es of set bit/s in it's binary representation.
  *
  * 	-> Starting from 2^0, this program will print the index where bits are set. 
  * 

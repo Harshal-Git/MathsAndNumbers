@@ -27,6 +27,9 @@ public class FindMissingNumber1 {
 		
 		int data2[] = {1, 5, 3, 2};	// o/p = 4
 		System.out.println("Missing number in data: "+Arrays.toString(data2)+" => "+findMissingNumber(data2));
+		
+		int data3[] = {2, 5, 3, 4};	// o/p = 1
+		System.out.println("Missing number in data: "+Arrays.toString(data3)+" => "+findMissingNumber(data3));
 	}
 
 	/**

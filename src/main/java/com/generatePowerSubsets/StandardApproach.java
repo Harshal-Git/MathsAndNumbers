@@ -49,7 +49,7 @@ public class StandardApproach {
 		int possibleOffsets = (int) Math.pow(2, length);
 
 		/*
-		 * Find all the bits which are set for given number. 
+		 * Find indexes of set bits for given number. 
 		 * With the help of such indexes, we can find subsets of given string.
 		 */
 		for(int index = 0; index < possibleOffsets; index++) {

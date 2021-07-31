@@ -24,16 +24,32 @@ public class EfficientApproach1 {
 	 */
 	public static void main(String[] args) {
 
-		int x = 2, y = 3;
+		double x = 2;
+		long y = 3;
 		System.out.println("Pow("+x+", "+y+") = "+pow(x, y));
-		
+
 		x = 3; y = 4;
 		System.out.println("Pow("+x+", "+y+") = "+pow(x, y));
-		
+
 		x = 5; y = 0;
 		System.out.println("Pow("+x+", "+y+") = "+pow(x, y));
-		
+
 		x = 5; y = 1;
+		System.out.println("Pow("+x+", "+y+") = "+pow(x, y));
+
+		x = 5; y = 10;
+		System.out.println("Pow("+x+", "+y+") = "+pow(x, y));
+
+		x = 8; y = 10;
+		System.out.println("Pow("+x+", "+y+") = "+pow(x, y));
+
+		x = 2.0; y = 10;
+		System.out.println("Pow("+x+", "+y+") = "+pow(x, y));
+
+		x = 2.0; y = -2;
+		System.out.println("Pow("+x+", "+y+") = "+pow(x, y));
+
+		x = 1.0; y = 2147483647;
 		System.out.println("Pow("+x+", "+y+") = "+pow(x, y));
 	}
 
@@ -42,18 +58,25 @@ public class EfficientApproach1 {
 	 * @param y
 	 * @return
 	 */
-	private static int pow(int x, int y) {
-		
+	private static double pow(double x, long y) {
+		// corner case
 		if(y == 0) {
-			return 1;
+			return 1.0;
+		} else if(y == 1) {
+			// base case
+			return x;
+		} else if(y < 0) {
+			// if raise is negative; x is inversed & raise is negated
+			return pow(1/x, -y);
 		}
-		
-		int temp = pow(x, (y/2)); 
-				
-		if(y % 2 == 0) {
-			return (temp*temp);
-		} else {
-			return (temp*temp*x);
+		else {
+			// otherwise
+			double temp = pow(x*x, (y/2)); 
+			if(y % 2 == 1) {
+				return (temp*x);
+			} else {
+				return temp;
+			}
 		}
 	}
 }

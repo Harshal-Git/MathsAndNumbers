@@ -21,6 +21,8 @@ package com.computePower;
  *	-> Time complexity: 0(log n) : y gets divided by 2
  *	-> Space complexity: 0(1)
  *	-> Auxiliary space: 0(1)
+ *
+ *	-> Drawback : this will work properly only when numbers are positive.
  */
 public class BinaryExponentiationMethod {
 
@@ -51,12 +53,12 @@ public class BinaryExponentiationMethod {
 	 * @param y
 	 * @return
 	 */
-	private static long pow(long x, int y) {
-		long result = 1;
+	private static double pow(double x, int y) {
+		double result = 1.0;
 		while(y > 0) {
 			if(y % 2 != 0) {	// to read the set bit
 				result = result * x;
-			}
+			} 
 			x = x * x;
 			y = y / 2;
 		}

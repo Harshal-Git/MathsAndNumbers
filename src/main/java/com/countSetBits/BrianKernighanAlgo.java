@@ -27,25 +27,28 @@ public class BrianKernighanAlgo {
 	public static void main(String[] args) {
 
 		int n = 5;
-		System.out.println("Set bits in "+n+" = "+countSetBits(n));
+		//System.out.println("Set bits in "+n+" = "+countSetBits(n));
 
 		n = 7;
-		System.out.println("Set bits in "+n+" = "+countSetBits(n));
+		//System.out.println("Set bits in "+n+" = "+countSetBits(n));
 
 		n = 13;
-		System.out.println("Set bits in "+n+" = "+countSetBits(n));
+		//System.out.println("Set bits in "+n+" = "+countSetBits(n));
 
 		n = 17;
-		System.out.println("Set bits in "+n+" = "+countSetBits(n));
+		//System.out.println("Set bits in "+n+" = "+countSetBits(n));
 
+		n = 31;
+		//System.out.println("Set bits in "+n+" = "+countSetBits(n));
+		
 		n = 33;
 		System.out.println("Set bits in "+n+" = "+countSetBits(n));
 
 		n = 54;
-		System.out.println("Set bits in "+n+" = "+countSetBits(n));
+		//System.out.println("Set bits in "+n+" = "+countSetBits(n));
 		
 		n = 40;
-		System.out.println("Set bits in "+n+" = "+countSetBits(n));
+		//System.out.println("Set bits in "+n+" = "+countSetBits(n));
 	}
 
 	/**
@@ -54,8 +57,10 @@ public class BrianKernighanAlgo {
 	 */
 	private static int countSetBits(int n) {
 		int setBitsCount = 0;
+		System.out.println("1:"+n);
 		while(n > 0) {
 			n = (n & (n-1));
+			System.out.println("2:"+n);
 			setBitsCount++;
 		}
 		return setBitsCount;

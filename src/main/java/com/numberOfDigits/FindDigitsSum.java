@@ -6,10 +6,9 @@ package com.numberOfDigits;
 /**
  * @author Harshal-Git
  *
- *	-> Keep adding digits of a given number until it results in a single digit.
- *
+ *	-> Keep adding digits of a number until the sum of digits results in a single digit.
  */
-public class AddDigits {
+public class FindDigitsSum {
 
 	/**
 	 * @param args
@@ -17,19 +16,19 @@ public class AddDigits {
 	public static void main(String[] args) {
 
 		long num = 159;
-		System.out.println("Number= "+num+" => result: "+findSum1(num));
+		//System.out.println("Number= "+num+" => result: "+findSum1(num));
 		System.out.println("Number= "+num+" => result: "+findSum2(num));
 
 		num = 1234567890;
-		System.out.println("\nNumber= "+num+" => result: "+findSum1(num));
+		//System.out.println("\nNumber= "+num+" => result: "+findSum1(num));
 		System.out.println("Number= "+num+" => result: "+findSum2(num));
 
 		num = 666;
-		System.out.println("\nNumber= "+num+" => result: "+findSum1(num));
+		//System.out.println("\nNumber= "+num+" => result: "+findSum1(num));
 		System.out.println("Number= "+num+" => result: "+findSum2(num));
 
 		num = 99999999;
-		System.out.println("\nNumber= "+num+" => result: "+findSum1(num));
+		//System.out.println("\nNumber= "+num+" => result: "+findSum1(num));
 		System.out.println("Number= "+num+" => result: "+findSum2(num));
 	}
 

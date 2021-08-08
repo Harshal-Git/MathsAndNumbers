@@ -35,6 +35,27 @@ public class BinaryConversion {
 		
 		num = 40;
 		System.out.println("Binary value of "+num+" : "+binary(num));
+		
+		num = 5;
+		System.out.println("Binary value of "+num+" : "+binary(num));
+		
+		num = 7;
+		System.out.println("Binary value of "+num+" : "+binary(num));
+		
+		num = 13;
+		System.out.println("Binary value of "+num+" : "+binary(num));
+		
+		num = 17;
+		System.out.println("Binary value of "+num+" : "+binary(num));
+		
+		num = 33;
+		System.out.println("Binary value of "+num+" : "+binary(num));
+		
+		num = 54;
+		System.out.println("Binary value of "+num+" : "+binary(num));
+		
+		num = 100;
+		System.out.println("Binary value of "+num+" : "+binary(num));
 	}
 
 	/**

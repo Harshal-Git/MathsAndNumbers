@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.powerOf2;
+package com.powerOf2Check;
 
 /**
  * @author Harshal-Git

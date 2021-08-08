@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.computePower;
+package com.power;
 
 /**
  * @author Harshal-Git
@@ -22,7 +22,6 @@ package com.computePower;
  *	-> Space complexity: 0(1)
  *	-> Auxiliary space: 0(1)
  *
- *	-> Drawback : this will work properly only when numbers are positive.
  */
 public class BinaryExponentiationMethod {
 
@@ -46,6 +45,9 @@ public class BinaryExponentiationMethod {
 
 		x = 5; y = 6;
 		System.out.println("Pow("+x+", "+y+") = "+pow(x, y));
+
+		x = 2; y = -3;
+		System.out.println("Pow("+x+", "+y+") = "+pow(x, y));
 	}
 
 	/**
@@ -55,12 +57,21 @@ public class BinaryExponentiationMethod {
 	 */
 	private static double pow(double x, int y) {
 		double result = 1.0;
-		while(y > 0) {
-			if(y % 2 != 0) {	// to read the set bit
+		// mean power (to deal with negative raise)
+		int meanPower = 1;
+		if(y < 0) {
+			meanPower = -y;
+			x = 1/x;
+		} else {
+			meanPower = y;
+		}
+		// use mean power
+		while(meanPower > 0) {
+			if(meanPower % 2 != 0) {	// to read the set bit
 				result = result * x;
 			} 
 			x = x * x;
-			y = y / 2;
+			meanPower = meanPower / 2;
 		}
 		return result;
 	}

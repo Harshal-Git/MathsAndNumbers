@@ -93,7 +93,7 @@ programs related to Mathematics and numbers & bit operations : competitive prepa
 	ex: n = 10 => o/p = 2 3 5 7  
 	    n = 23 => o/p = 2 3 5 7 11 13 17 23
 
-12. Computing power - calculate power of a number based on given inputs (com.computePower)
+12. Computing power - calculate power of a number based on given inputs (com.power)
 	
    -> Naive approach: 
    -> Efficient approach : recursive call
@@ -124,7 +124,7 @@ programs related to Mathematics and numbers & bit operations : competitive prepa
 		n = 7 ==> o/p : 3
 		n = 13 ==> o/p : 3
 		
-   -> check whether given number is power of 2 OR not (com.powerOf2)
+   -> check whether given number is power of 2 OR not (com.powerOf2Check)
     
    1. Naive approach : repeatedly divide given number by 2 and if it has a remainder while dividing by 2, it's not power of 2
    2. Using Brian algo : 

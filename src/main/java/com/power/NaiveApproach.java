@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.computePower;
+package com.power;
 
 /**
  * @author Harshal-Git

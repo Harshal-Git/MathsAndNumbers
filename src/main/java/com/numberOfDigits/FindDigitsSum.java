@@ -30,6 +30,10 @@ public class FindDigitsSum {
 		num = 99999999;
 		//System.out.println("\nNumber= "+num+" => result: "+findSum1(num));
 		System.out.println("Number= "+num+" => result: "+findSum2(num));
+		
+		num = 999999999;
+		//System.out.println("\nNumber= "+num+" => result: "+findSum1(num));
+		System.out.println("Number= "+num+" => result: "+findSum2(num));
 	}
 
 	/**
@@ -76,6 +80,7 @@ public class FindDigitsSum {
 		do {
 			// reset calculations for new sum process
 			if(sum != 0) {
+				//System.out.print(sum+" ");
 				temp = sum;
 				sum = 0;
 			}
